@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { LoginComponent } from './login/login.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { ServiessComponent } from './serviess/serviess.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -14,11 +15,13 @@ const routes: Routes = [
   { path: 'product', component: ServiceComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'slide', component: SlideshowComponent }
+  { path: 'slide', component: SlideshowComponent },
+  { path: 'service', component: ServiessComponent }
   
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

@@ -152,11 +152,11 @@
 
           <ul class="portfolio-list">
 
-            <li>
+            <li *ngFor="let car of cars">
               <div class="portfolio-card">
 
                 <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/mred.jpeg" width="800" height="540" loading="lazy"
+                  <img [src]="car.picture" width="800" height="540" loading="lazy"
                     alt="Website Design for Marketing Agency Startup" class="img-cover">
 
                   <!-- <a href="#" class="btn-icon" aria-label="More about Website Design for Marketing Agency Startup"> -->
@@ -168,11 +168,11 @@
 
                   <span class="chip label-md">Roofing Materials</span>
 
-                  <h3 class="title-md">Mabati</h3>
+                  <h3 class="title-md">{{car.car_name}}</h3>
 
                 
                     <ul class="card-text">
-                      <li style="color: brown;"><b>2-Metres Quage-28</b></li>
+                      <li style="color: brown;"><b>{{car.properties}}</b></li>
                       <li style="color: red ; font-weight: bold; font-size: xx-large;">@ Ksh. 700</li>
                       <li style="color: green ; font-style: italic;font-weight: bold;">Available in Varius Colors</li>
                     </ul>
@@ -186,7 +186,7 @@
             </li>
 
 
-            <li>
+            <!-- <li>
               <div class="portfolio-card">
 
                 <div class="card-banner img-holder" style="--width: 800; --height: 540;">
@@ -413,7 +413,7 @@
                 </div>
 
               </div>
-            </li>
+            </li> -->
 
           </ul>
 

@@ -12,6 +12,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { ServiessComponent } from './serviess/serviess.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    ServiessComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
